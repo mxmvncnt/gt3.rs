@@ -5,7 +5,6 @@
 
 h1 {
   font-size: 4rem;
-  word-break: break-all;
 }
 
 h2 {
@@ -24,12 +23,16 @@ h3 {
   margin: 100px auto;
   width: 600px;
   max-width: 90vw;
-  text-align: justify;
+  text-align: left;
 }
 
 body {
   margin: auto;
   text-align: center;
+}
+
+#title:hover {
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,5 +56,11 @@ body {
 
   a {
     color: rgb(71, 63, 63);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4vmax;
   }
 }

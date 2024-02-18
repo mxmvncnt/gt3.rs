@@ -1,18 +1,14 @@
 const VARIATION = 200;
 
-const DEFAULT_TEXT = "GT3.rs";
+const DEFAULT_TEXT = "No inner text found";
 
-window.onload = function () {
-    let texteElem = document.getElementById("text")
-    unblur(texteElem)
-};
-
-function unblur(htmlElement) {
+function unblur(elementId) {
+    let htmlElement = document.getElementById(elementId)
     let taggedText = "";
 
     let txt = DEFAULT_TEXT
-    if (document.getElementById("text") !== null) {
-        txt = document.getElementById("text").innerText;
+    if (document.getElementById(elementId) !== null) {
+        txt = document.getElementById(elementId).innerText;
     }
 
     for (let i = 0; i < txt.length; i++) {
