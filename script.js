@@ -32,17 +32,15 @@ function unblur(htmlElement) {
             continue;
         }
 
-        let padding = Math.abs(( spans.length / 2 ) - i ) * 0.2;
-        
+        let padding = Math.abs((spans.length) - i) * 0.1;
+
         let randomVariation = Math.floor(Math.random() * VARIATION + i * 50);
         span.style.padding = padding + "px";
-
 
         setTimeout(() => {
             span.classList.add("animate_padding");
             span.classList.add("animate_blur");
             span.classList.remove("text-animation-initial-state");
         }, randomVariation);
-
     }
 }

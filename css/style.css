@@ -20,7 +20,7 @@ h3 {
   min-height: 100vh;
 }
 
-body {
+.content {
   margin: 100px auto;
   width: 600px;
   max-width: 90vw;
