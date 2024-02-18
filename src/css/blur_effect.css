@@ -4,7 +4,6 @@
 
 .text-animation-initial-state {
     opacity: 0;
-    scale: 0.7;
     filter: var(--initial-blur);
 }
 
@@ -17,7 +16,6 @@
     to {
         filter: blur(0);
         opacity: 1;
-        padding: 0 !important;
     }
 }
 
